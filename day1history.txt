@@ -1,0 +1,163 @@
+    6  docker  version
+    7  docker  search  centos
+    8  docker  search  mysql
+    9  docker  search  hadoop
+   10  docker  search  dockerashu
+   11  docker  search  ashutoshh 
+   13  docker  search  python
+   15  docker  pull  centos 
+   16  docker  pull  alpine 
+   17  docker  pull  mysql 
+   18  docker  images
+   20  docker  images
+   24  docker  images
+   25  docker  info 
+   26  docker  images
+   30  docker  images
+   31  docker  run     alpine    cal  
+   32  docker  run     alpine    ping 8.8.8.8
+   34  docker   ps
+   36  docker  ps   -a
+   37  docker  ps   -a  | less
+   39  docker  ps
+   40  docker  ps -a
+   41  docker  ps -a   |  head  -2
+   42  docker  ps -a   | less
+   43  docker  run  --name  ashuc1    alpine  ping  fb.com 
+   44  docker  ps 
+   45  docker  ps  -a
+   46  docker  ps  -a  | less
+   49  docker  run  --name  ashuc2 -d    alpine  ping google.com 
+   50  docker  ps
+   52  docker  ps
+   54  docker  ps
+   55  docker  logs  ashuc2 
+   56  docker  logs  -f  ashuc2 
+   58  docker  ps
+   59  docker  logs  -f  be069f9cf944 
+   61  docker  logs  ashuc2
+   62  docker  ps  -a
+   63  docker  logs   fervent_boyd
+   65  docker  ps
+   66  docker  stop  ashuc2  
+   67  docker  kill   c038823d00ab 
+   68  docker  kill   18d50a231ca4
+   69  docker  ps
+   70  docker  kill   290ce6da9950
+   72  docker  ps
+   73  docker kill  31acf1e5192e   b5d5debba4f9 
+   74  docker  ps
+   75  docker  start   ashuc2
+   76  docker  ps
+   77  docker  ps -q
+   78  docker kill  $(docker  ps -q)
+   79  docker  ps
+   80  docker  rm   ashuc2
+   81  docker  rm   $(docker ps  -aq)
+   82  docker  rm   $(docker ps  -aq) --force
+   84  docker  ps
+   85  docker  ps  -q
+   86  docker  ps  -a
+   88  docker  ps
+   89  docker  ps  -a
+   90  docker  images
+   91  docker  run  --name ashuc11  -d   alpine  ping fb.com 
+   92  docker  ps
+   93  docker  run  --name ashuc11  -d   alpine  ping fb.com 
+   94  docker  run  --name ashuc12  -d   alpine  ping fb.com 
+   95  docker  ps
+   96  docker  ps -a
+   97  docker  start  ashuc11
+   98  docker  ps
+   99  docker  run  -d  --name ashuc33  alpine  ping  8.8.8.8
+  100  docker  ps
+  101  docker  ps 
+  102  docker  ps
+  104  docker  ps
+  105  docker  exec  ashuc33  date
+  106  docker  exec  ashuc33  cal
+  107  docker  exec  ashuc33  ping  8.8.8.8
+  108  docker  exec  ashuc33  cal
+  109  docker  ps
+  110  docker  exec  ashuc33  cal
+  111  docker  exec  ashuc33   sh 
+  112  docker  exec -i   ashuc33   sh 
+  113  docker  exec -it   ashuc33   sh 
+  117  docker  exec  ashuc33   ipconfig 
+  119  docker  run  -it  --name ashuc4  alpine  sh  
+  120  docker  ps
+  139  vim  Dockerfile     
+  142  vim  Dockerfile
+  143  cat  Dockerfile 
+  144  docker  run  -it   --name ok1  alpine  
+  145  docker  run  -it   --name ok12  alpine  cal 
+  146  docker  run   -it  centos  
+  147  docker ps  -a
+  148  docker ps  -a | less
+  150  docker  inspect  centos 
+  151  docker  inspect  centos   | less
+  152  docker  inspect  alpine   | less
+  153  docker  inspect  python    | less
+  154  docker  run  -it  python  
+  160  vim Dockerfile 
+  168  vim Dockerfile 
+  169  cat  Dockerfile 
+  172  cat  Dockerfile 
+  173  docker  images
+  175  docker  build  -t  wiproashuweb:v1    . 
+  177  docker  build  -t  wiproashuweb:v1    . 
+  179  docker  run -it --rm  alpine 
+  181  docker  run -it --rm  alpine 
+  184  ifconfig docker0
+  200  wget  https://tr3.cbsistatic.com/hub/i/r/2015/02/24/66940569-4cf5-46c0-ac82-8329257e6ec6/resize/1200x/563228baa6bf10dc2d62883381995932/docker-logo.png
+  202  wget  https://tr3.cbsistatic.com/hub/i/r/2015/02/24/66940569-4cf5-46c0-ac82-8329257e6ec6/resize/1200x/563228baa6bf10dc2d62883381995932/docker-logo.png
+  204  mv  docker-logo.png  docker.png
+  213  cp  ashu.html  docker.png   /tmp/day1/
+  215  vim  Dockerfile 
+  217  cp  Dockerfile   /tmp/day1/
+  219  cat  Dockerfile 
+  222  cat  Dockerfile 
+  224  docker build -t   wiproashu:v3  . 
+  226  docker  rm  $(docker ps -aq) --force
+  228  docker  images   
+  229  docker  images     |  grep -i ashu
+  230  docker run -itd --name ashuc111 -p 8788:80  wiproashu:v3  
+  231  docker ps
+  233  docker ps
+  234  cat  Dockerfile 
+  235  docker  ps 
+  236  docker  rm $(docker  ps -aq) --force 
+  237  docker  rmi  $(docker images -q)  --force 
+  239  docker  images
+  240  docker  ps
+  241  docker  ps -a
+  244  mkdir  manualdockerimg
+  245  cd  manualdockerimg/
+  250  docker  images
+  251  docker ps -a
+  252  docker  rmi  1f5fc15a7dbc
+  253  docker  rmi  470671670cac
+  254  docker images
+  256  docker  pull  centos
+  257  docker  images
+  259  docker  run --name c1  -it centos  bash 
+  261  docker  ps
+  262  docker ps -a
+  263  docker start  c1
+  264  docker  ps
+  266  docker  ps
+  267  docker  cp  ashu.html   c1:/var/www/html/index.html 
+  268  docker  exec -it c1  bash 
+  270  docker ps
+  271  docker  exec  -itd  c1  httpd -DFOREGROUND 
+  272  docker ps
+  273  docker  exec -it c1 bash
+  274  docker  commit  c1    ashuweb:v1  
+  275  docker  images
+  282  git  clone https://github.com/redashu/wipro2020docker
+  284  cp -rvf  htmlwebapp/   wipro2020docker/
+  286  cp -rvf  htmlapp2/  wipro2020docker/
+  288  cp -rvf  manualdockerimg/  wipro2020docker/
+  290  cd  wipro2020docker/
+  295  history    |   grep -i docker
+  296  history    |   grep -i docker  >day1history.txt
