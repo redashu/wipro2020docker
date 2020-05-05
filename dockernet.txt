@@ -1,0 +1,9 @@
+  646  docker  network   ls
+  650  docker  network   ls
+  651  docker  network   create   ashubr  --subnet   172.20.0.0/16  
+  652  docker  network  ls
+  654  docker  network  ls
+  655  docker  run  -itd  --name  ashuc22  --network  ashubr  alpine ping fb.com 
+  660  docker  run  -itd  --name  ashuc33  --network  ashubr --ip 172.20.0.100 alpine ping fb.com 
+  673  history   |   grep -i docker  net   >dockernet.txt
+  674  history   |   grep -i net   >dockernet.txt
