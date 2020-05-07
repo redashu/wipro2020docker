@@ -1,0 +1,11 @@
+  685  docker  volume  create  ashuvol1 
+  686  docker  volume  ls
+  687  docker  run  -it --name ashux11  -v  ashuvol1:/mnt/data   centos bash 
+  689  docker  volume  inspect ashuvol1 
+  692  docker  run  -it --name ashux11  -v  ashuvol1:/mnt/data   centos bash 
+  693  docker  run  -it --name ashux22  -v  ashuvol1:/okk   alpine  sh 
+  700  docker  run  -it --name ashuc77 -v  ashuvol1:/new:ro   centos  bash 
+  702  docker  volume ls
+  703  docker  run  -it --name ashuc77 -v  ashuvol1:/new:ro  -v Girivol:/ashu:rw     centos  bash 
+  704  docker  run  -it --name ashu997 -v  ashuvol1:/new:ro  -v Girivol:/ashu:rw     centos  bash 
+ 1009  history   |   grep -i  vol  >docker_volume.txt

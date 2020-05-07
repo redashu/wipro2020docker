@@ -1,0 +1,45 @@
+  553  docker  network   ls
+  557  docker  network   ls
+  558  docker  network   create   ashubr  --subnet   172.20.0.0/16  
+  559  docker  network  ls
+  561  docker  network  ls
+  562  docker  run  -itd  --name  ashuc22  --network  ashubr  alpine ping fb.com 
+  567  docker  run  -itd  --name  ashuc33  --network  ashubr --ip 172.20.0.100 alpine ping fb.com 
+  580  history   |   grep -i docker  net   >dockernet.txt
+  581  history   |   grep -i net   >dockernet.txt
+  733  netstat -nlpt
+  742  docker  network   ls
+  743  docker  network  rm  DJ
+  744  docker  network  rm  $(docker network ls -q)
+  745  docker  network  ls
+  746  docker  network  create  ashubr1 --subnet  172.20.0.0/16  
+  747  docker  network   ls
+  749  docker  network  ls
+  750  docker  network  inspect  ashubr1 
+  752  docker  network  inspect  ashubr1 
+  753  docker  run  -itd --name ashuc1 --network ashubr1  alpine ping fb.com 
+  755  docker  run  -itd --name ashuc2 --network ashubr1  --ip 172.20.0.200   alpine ping fb.com 
+  774  docker  network  inspect  ashubr1 
+  776  docker network  inspect  bridge 
+  777  docker network  inspect  ashubr1 
+  780  docker  network  connect  bridge  ashuc1 
+  783  docker  network ls 
+  784  docker  network  inspect amit1 
+  785  docker  network  inspect amit1   |  less 
+  790  docker  network  disconnect  ashubr1  ashuc1 
+  793  docker  network  disconnect  bridge  ashuc1 
+  796  docker  network  connect  bridge  ashuc1 
+  798  docker  network  connect  bridge  ashuc2
+  801  docker  network  ls
+  802  docker  network  rm  ashubr1 
+  803  docker  network  rm   $(docker network  ls  -q)
+  804  docker  network  ls
+  806  docker  network  ls
+  807  docker  network  ls -q
+  808  docker  run -it --rm  --network  host alpine sh 
+  810  docker network  ls
+  811  docker  run -it --rm  --network  none  alpine sh 
+  907  docker  network  ls
+  988  docker network  ls
+ 1007  history   |   grep -i net
+ 1008  history   |   grep -i net  >docker_network.txt

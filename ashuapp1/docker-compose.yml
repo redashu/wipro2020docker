@@ -1,0 +1,6 @@
+version: '3.5'
+services:
+ ashus1:        # name can be any thing
+  image: alpine 
+  container_name:  ashuc1100
+  command: ping fb.com
