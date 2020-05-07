@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+ ashuappdesign:
+  image: dockerashu/april2020:wiprov001   #  i want to push this image on docker hub after build 
+  build: .  # location of  Dockerfile
+  container_name: ashuwebc111
+  ports:
+   - "4400:80"
+  environment:
+   app: webapp1   #  first application  deployment 
